@@ -1,7 +1,7 @@
 # Automated Final Song Title & Version Extraction Script
 
 ## Overview
-This Python script takes a spreadsheet of song titles to automatically guess the "final" song title for entries that are missing one. It also generates version numbers based on song title. It is designed for music archives where many songs have multiple versions or variations in their names (e.g., live dates, BPM tags, version numbers).
+This Python script takes a spreadsheet of song titles to automatically generate the "final" song title for entries that are missing one. It also generates version numbers based on song title. It is designed for music archives where many songs have multiple versions or variations in their names (e.g., live dates, BPM tags, version numbers).
 
 - Standardise titles for better matching using regex cleaning
 - Guess missing final titles using fuzzy matching against known entries.
