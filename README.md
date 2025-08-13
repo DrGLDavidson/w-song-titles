@@ -1,4 +1,4 @@
-# Automated Final Song Title & Version Extraction Script
+# Automated Final Song Title and Version Extraction Script
 
 ## Overview
 This Python script takes a spreadsheet of song titles to automatically guess the "final" song title for entries that are missing one. It also generates version numbers based on song title. It is designed for music archives where many songs have multiple versions or variations in their names (e.g., live dates, BPM tags, version numbers).
@@ -37,7 +37,7 @@ The script generates a new CSV with additional columns:
 | `automatedFinalTitle`      | Script’s guessed final title. |
 | `finalTitleComparison`    | Compares `automatedFinalTitle` to `Final song title`:<br>• `Match` – same title<br>• `Different` – titles differ<br>• `Previously missing` – no archivist title but script guessed one<br>• `No guess` – no archivist title and no script guess |
 | `automatedVersion`      | Version number extracted automatically from `title` (integer only). |
-| `versionComparison`     | Compares `version` (archivist) with `automatedVersion`:<br>• `Match` – both numbers match<br>• `Different` – both present but do not match<br>• `Previously missing` – archivist version blank, AI found one<br>• `no version` – neither has a version number |
+| `versionComparison`     | Compares `version` (archivist) with `automatedVersion`:<br>• `Match` – both numbers match<br>• `Different` – both present but do not match<br>• `Previously missing` – archivist version blank <br>• `no version` – neither has a version number |
 
 ---
 
