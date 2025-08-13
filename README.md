@@ -12,6 +12,8 @@ The script **does not overwrite existing archivist-provided titles** but fills i
 It is intended to **assist** archivists, and **all results should be checked manually**.
 It was written using a spreadsheet containing a subset of songs in which all fields had a value in the 'version' column. It would need to be tested/tweaked for songs that do not have multiple version (e.g. to return blank value). 
 
+The script can be modified for google spreadsheet API
+
 ---
 
 ## Input Columns
@@ -25,11 +27,9 @@ The CSV you load must contain at least:
 | `version`          | Archivist's recorded version number |
 
 ---
-The script can be modified for google spreadsheet API
 
 ## Output Columns
 
-The script generates a new CSV with additional columns:
 
 | Column Name             | Description |
 |-------------------------|-------------|
