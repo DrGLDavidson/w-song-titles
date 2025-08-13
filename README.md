@@ -50,7 +50,7 @@ While the script can fill in many missing titles and version numbers automatical
 - **Review `versionComparison`** to see whether version detection aligns with archivist records.
 
 The script’s output is a *starting point* for correction, not a final authoritative list.
-It fails on version numbers where numerical values are in the song title itself. It also returned "Ad" as the final song title for "Adventure". Could be tweaked in the script, or just manually edited. 
+For example, ot fails on version numbers where numerical values are in the song title itself. Such returns could be tweaked in the script, or just manually edited. 
 
 ---
 
