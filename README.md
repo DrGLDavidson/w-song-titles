@@ -24,8 +24,8 @@ The CSV you load must contain at least:
 | `Final song title` | Archivist's finalised title, if known. |
 | `version`          | Archivist's recorded version number |
 
-The Script can be modified to pull from a google spreadsheet API
 ---
+The script can be modified for google spreadsheet API
 
 ## Output Columns
 
