@@ -1,4 +1,4 @@
-# Automated Final Song Title & Version Extraction Script
+# Automated Final Song Title and Version Extraction Script
 
 ## Overview
 This Python script takes a spreadsheet of song titles to automatically generate the "final" song title for entries that are missing one. It also generates version numbers based on song title. It is designed for music archives where many songs have multiple versions or variations in their names (e.g., live dates, BPM tags, version numbers).
@@ -56,5 +56,5 @@ It fails on version numbers where numerical values are in the song title itself.
 
 ## Output File
 
-The script saves a CSV named:song_titles_with_automation.csv
+The script saves a CSV named:song_titles_with_automation.csv  
 Script could be modified to populate a google spreadsheet. 
