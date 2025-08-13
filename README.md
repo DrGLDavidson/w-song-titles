@@ -37,7 +37,7 @@ The script generates a new CSV with additional columns:
 | `finalTitleScript`      | Script’s guessed final title. |
 | `finalTitleComparison`    | Compares `finalTitleScript` to `Final song title`:<br>• `Match` – same title<br>• `Different` – titles differ<br>• `Previously missing` – no archivist title but script guessed one<br>• `No guess` – no archivist title and no script guess |
 | `automatedVersion`      | Version number extracted automatically from `title` (integer only). |
-| `versionComparison`     | Compares `version` (archivist) with `automatedVersion`:<br>• `Match` – both numbers match<br>• `Different` – both present but do not match<br>• `Previously missing` – archivist version blank, AI found one<br>• `no version` – neither has a version number |
+| `versionComparison`     | Compares `version` (archivist) with `automatedVersion`:<br>• `Match` – both numbers match<br>• `Different` – both present but do not match<br>• `Previously missing` – archivist version blank• `no version` – neither has a version number |
 
 ---
 
