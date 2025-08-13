@@ -17,7 +17,8 @@ def clean_title(t):
         return ""
     t = t.lower()
     t = re.sub(r"\(.*?\)", "", t)           # remove parentheses
-    t = re.sub(r"[vV].*$", "", t)           # remove everything from 'v' onwards  
+    t = re.sub(r"\s[vV]\d.*$", "", t)       # remove everything from onwards if ' v' followed by digit
+    t = re.sub(r"\s[vV]\s.*$", "", t)       # remove everything from onwards if ' v' followed by space  
     t = re.sub(r"\bv\d+\b", "", t)          # remove 'v10'
     t = re.sub(r"@\d+", "", t)              # remove '@95'
     t = re.sub(r"\s\d.*$", "", t)           # remoive space + numer and everything after it. Consider commenting out if titles have numbers as part of genuine title. 
