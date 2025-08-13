@@ -48,15 +48,15 @@ def find_canonical_title(stripped):
         return match[0]  # The canonical title
     return stripped
 
-# Create finalTitleScript using fuzzy grouping
-df_out["finalTitleScript"] = df_out["titleStripped"].apply(find_canonical_title)
+# Create automatedFinalTitle using fuzzy grouping
+df_out["automatedFinalTitle"] = df_out["titleStripped"].apply(find_canonical_title)
 
 # Add comparison column
 df_out["finalTitleComparison"] = df_out.apply(
     lambda row: (
         "previously missing" if pd.isna(row["Final song title"]) else
         ("Match" if str(row["Final song title"]).strip().lower() ==
-                   str(row["finalTitleScript"]).strip().lower()
+                   str(row["automatedFinalTitle"]).strip().lower()
          else "Different")
     ),
     axis=1

@@ -1,7 +1,7 @@
-# Automated Final Song Title and Version Extraction Script
+# Automated Final Song Title & Version Extraction Script
 
 ## Overview
-This Python script takes a spreadsheet of song titles to automatically generate the "final" song title for entries that are missing one. It also generates version numbers based on song title. It is designed for music archives where many songs have multiple versions or variations in their names (e.g., live dates, BPM tags, version numbers).
+This Python script takes a spreadsheet of song titles to automatically guess the "final" song title for entries that are missing one. It also generates version numbers based on song title. It is designed for music archives where many songs have multiple versions or variations in their names (e.g., live dates, BPM tags, version numbers).
 
 - Standardise titles for better matching using regex cleaning
 - Guess missing final titles using fuzzy matching against known entries.
@@ -34,10 +34,10 @@ The script generates a new CSV with additional columns:
 | Column Name             | Description |
 |-------------------------|-------------|
 | `title_stripped`        | Title after cleaning (lowercased, brackets removed, BPMs and version markers stripped). Used for matching and helps check regex behaviour. |
-| `finalTitleScript`      | Script’s guessed final title. |
-| `finalTitleComparison`    | Compares `finalTitleScript` to `Final song title`:<br>• `Match` – same title<br>• `Different` – titles differ<br>• `Previously missing` – no archivist title but script guessed one<br>• `No guess` – no archivist title and no script guess |
+| `automatedFinalTitle`      | Script’s guessed final title. |
+| `finalTitleComparison`    | Compares `automatedFinalTitle` to `Final song title`:<br>• `Match` – same title<br>• `Different` – titles differ<br>• `Previously missing` – no archivist title but script guessed one<br>• `No guess` – no archivist title and no script guess |
 | `automatedVersion`      | Version number extracted automatically from `title` (integer only). |
-| `versionComparison`     | Compares `version` (archivist) with `automatedVersion`:<br>• `Match` – both numbers match<br>• `Different` – both present but do not match<br>• `Previously missing` – archivist version blank• `no version` – neither has a version number |
+| `versionComparison`     | Compares `version` (archivist) with `automatedVersion`:<br>• `Match` – both numbers match<br>• `Different` – both present but do not match<br>• `Previously missing` – archivist version blank, AI found one<br>• `no version` – neither has a version number |
 
 ---
 
@@ -56,5 +56,5 @@ It fails on version numbers where numerical values are in the song title itself.
 
 ## Output File
 
-The script saves a CSV named:song_titles_with_automation.csv  
+The script saves a CSV named:song_titles_with_automation.csv
 Script could be modified to populate a google spreadsheet. 
