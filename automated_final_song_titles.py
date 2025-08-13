@@ -3,7 +3,7 @@ from rapidfuzz import fuzz, process
 import re
 
 # Load spreadsheet, to be adapted for google sheet API 
-df = pd.read_csv("song_titles.csv")
+df = pd.read_csv("song_titles.csv", dtype={"version": str})
 
 # Make a copy to not overwrite original columns
 df_out = df.copy()
